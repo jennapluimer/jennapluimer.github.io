@@ -24,7 +24,7 @@ h1 {
 }
 
 /* You’ll need to add a span element to your HTML. */
-h1.at { 	
+h1 span{ 	
 	font-family: serif;
 	font-style: italic;
 	font-weight: bold;
@@ -41,14 +41,14 @@ h2 {
 }
 
 h3 {
-	margin: 4rem, 1rem, 2rem; /*Three values again. You got the idea.*/
+	margin: 4rem, 2rem, 2rem; /*Three values again. You got the idea.*/
 	padding-top: 0.5rem;
 	font-size: 1.5em;
 	color: rgb(172, 49, 43);
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 0.1em; /*Just an extra tracking for bold uppercase letters. Try 0.1em */
-	border-top: 0.2em solid rgb(172, 49, 43);
+	border-top: 0.2em solid rgb(172, 49, 43); 
 }
 
 h4 {
@@ -69,4 +69,5 @@ ul {
 
 li { 
 	margin: 1rem;
+    list-style:  none;
 }
