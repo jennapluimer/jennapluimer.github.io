@@ -33,6 +33,7 @@ figcaption {
     font-weight: 400;  
     font-style: italic;
     margin: 1em;
+    color: rgb(39 39 39);
     
 }
 
@@ -53,13 +54,16 @@ ul{ margin-left: 0.5em;
 
 ol{
     margin-left: 0.5em;
+    margin-bottom: 2em;
 }
 
 li{ 
+    color: rgb(39 39 39);
     font-family: poppins, sans-serif;  
     font-weight: 400;  
     font-style: normal;
     margin: 1em;
+    line-height: 150%;
 }
 
 
@@ -67,6 +71,7 @@ p{
     font-family: poppins, sans-serif;  
     font-weight: 400;  
     font-style: normal;
+    color: rgb(39 39 39);
 }
 
 footer{
