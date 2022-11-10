@@ -1,0 +1,115 @@
+/*CSS DOCUMENT*/
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
+
+img {
+	width: 100%;
+	display: block;
+    padding-top: 1rem;
+}
+
+body{
+    background-color: #fafafa;
+    color: #1e1e1e;
+}
+
+h2 {
+font-size: 3em;
+font-family: chippewa-falls, sans-serif;
+font-weight: 500;
+font-style: normal;
+padding-left: 2rem;
+}
+
+h3 {
+font-size: 1.3em;
+font-family: sweater-school, sans-serif;
+font-weight: 600;
+font-style: normal;
+padding-left: 2rem;
+padding-top: 1rem;
+}
+
+h4{
+font-size: 1em;
+font-family: sweater-school, sans-serif;
+font-weight: 600;
+font-style: normal;
+padding-left: 2rem;
+padding-top: 1rem;
+text-transform: uppercase;
+color: rgb(0, 102, 102);
+}
+
+p{
+font-size: 1em;
+font-family: sweater-school, sans-serif;
+font-weight: 400;
+font-style: normal;
+padding: 1rem 1rem 0.5rem 2rem;
+}
+
+.price{
+    padding-bottom: 1.5rem;
+    padding-top: none;
+}
+
+.description{
+padding-bottom: none;
+        font-style: italic;
+
+}
+
+.location{
+    text-transform: lowercase;
+}
+
+nav ul{
+    padding: 1rem;
+}
+
+nav ul li{
+    display: inline;
+    font-size: 2em;
+    font-family: chippewa-falls,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 1rem;
+}
+
+nav ul li a{
+    color: rgb(0, 102, 102);
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color:rgb(163,202,203);
+}
+
+
+footer ul li{
+    list-style: none;
+    font-size: 1em;
+    font-family: sweater-school, sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    padding-left: 2rem;
+    display: inline;
+}
+
+footer {
+        background-color: rgb(0, 102, 102);
+        color:#fafafa;
+}
+
+footer h3{
+    text-transform: uppercase;
+    padding-top: 1rem;
+}
+footer ul{
+    padding-top: 0.25rem;
+    padding-bottom: 1rem;
+    text-transform: lowercase;
+}
+
+
+/*Please don’t change this CSS stylesheet for the content hierarchy assginment */
