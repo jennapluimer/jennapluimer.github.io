@@ -1,0 +1,282 @@
+/*CSS DOCUMENT*/
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
+
+img {
+	width: 100%;
+	display: block;
+    padding-top: 1rem;
+    padding-bottom: 1.3rem;
+}
+
+body{
+    background-color: #fafafa;
+    color: #1e1e1e;
+}
+
+h2 {
+font-size: 2em;
+font-family: chippewa-falls, sans-serif;
+font-weight: 500;
+font-style: normal;
+text-align: center;
+    margin: auto;
+
+}
+
+h3 {
+font-size: 1.5em;
+font-family: roc-grotesk, sans-serif;
+font-weight: 600;
+font-style: normal;
+padding-top: 1rem;
+    margin: auto;
+    text-align: center;
+
+}
+
+h4{
+font-size: 1em;
+font-family: roc-grotesk, sans-serif;
+font-weight: 600;
+font-style: normal;
+letter-spacing: 0.2rem;
+padding-top: 1rem;
+text-transform: uppercase;
+color: rgb(0, 102, 102);
+    text-align: center;
+    margin: auto;
+    text-align: center;
+}
+
+p{
+font-size: 1.2em;
+font-family: roc-grotesk, sans-serif;
+font-weight: 400;
+font-style: normal;
+padding: 1rem 1rem 0.5rem;
+
+}
+
+
+ul li{
+    list-style: none;
+    text-align: center;
+}
+
+
+
+.price{
+    padding-bottom: 1.5rem;
+    padding-top: none;
+}
+
+.description{
+padding-bottom: none;
+font-style: italic;
+
+}
+
+.location{
+    text-transform: lowercase;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+div.about{
+    margin: 1.5em;
+}
+div.locations{
+        text-align: center;
+        margin: auto;
+    }
+    
+p.home{
+    font-size: 1.5em;
+    padding: 4rem 2rem 1rem 3rem;
+}
+
+nav ul{
+    padding: 1rem;
+     margin: auto;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline;
+    font-size: 2em;
+    font-family: chippewa-falls,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 1rem 0.5rem 0.5rem 1rem;
+    
+}
+
+nav ul li a{
+    color: rgb(0, 102, 102);
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color:rgb(163,202,203);
+}
+
+footer ul li{
+    list-style: none;
+    font-size: 1em;
+    font-family: roc-grotesk, sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    text-align: center;
+    padding-top: 0.3rem;
+}
+
+footer ul li a{
+    color: #fafafa;
+    text-decoration: none;
+}
+
+footer ul li a:hover{
+     color:rgb(163,202,203);
+}
+
+footer{
+        background-color: rgb(0, 102, 102);
+        color:#fafafa;
+    margin-top: 2rem;
+}
+
+footer h3{
+    padding-top: 1rem;
+    text-align: center;
+}
+footer ul{
+    padding-top: 0.25rem;
+    padding-bottom: 1rem;
+    text-transform: lowercase;
+}
+
+@media screen and (min-width: 40em){
+
+    h2{
+        font-size: 3em;
+    }
+ ul.grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 2rem;
+     margin: 2em;
+    
+    }
+    h4{ font-size: 1.2em;
+    font-weight: 700;} 
+    
+    nav ul{
+        margin: auto;
+        text-align: center;
+    }
+    nav ul li{
+        font-size: 3em;
+        padding-right: 2.3rem;
+    }
+    img{
+        width: 100%;
+        margin: auto;
+    }
+
+    div.about{
+        margin-right: 4rem;
+        margin-left: 4rem;
+        max-width: 70%;
+        margin: auto;
+    }
+    div.about p{
+        text-align: left;
+    }
+   
+}
+@media screen and (min-width: 57em){
+
+
+ div.container{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 10em auto 3rem;
+}
+    header, footer{
+        background-color: rgb(0, 102, 102);
+        grid-column: 1/7;
+    }
+    
+    footer{
+        grid-row: 2/3;
+    }
+    
+    nav ul {
+        background-color: #fafafa;
+    }
+    header img{
+        max-width: 20em;
+        grid-row: auto;
+        padding-left: 1rem;
+    }
+    p.home{
+        margin: auto;
+        padding-top: 3.5em;
+        font-size: 1.8em;
+        
+    }
+    img.home{
+        grid-column: 3/6;
+        padding-left: 1rem;
+        grid-row-start: 1;
+
+    }
+    p{ 
+    grid-column: 1/3;
+    grid-row: auto;
+    }
+    
+   
+    h3{
+        grid-column: 1/4;
+        grid-row: 3/4;
+    }
+    
+    h2{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+   
+    
+img{
+        grid-column: 3/6;
+        grid-row: 1/6;
+    }
+    ul.grid{
+        display: grid;
+        grid-column-gap: 3rem;
+        padding: 3rem 5rem 1rem;
+    }
+    
+    div.locations img{
+        max-width: 80%;
+        margin: auto;
+    }
+     
+    
+    ul{
+        grid-column: 1/3;
+        list-style: none;
+        grid-row: auto;
+    }
+   
+    
+    h3{
+        padding-top: 2rem;
+    }
+}
+
+
+
+/*Please don’t change this CSS stylesheet for the content hierarchy assginment */
