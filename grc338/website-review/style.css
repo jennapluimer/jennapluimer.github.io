@@ -1,0 +1,291 @@
+/*CSS DOCUMENT*/
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
+
+img {
+  width: 100%;
+  display: block;
+  padding-top: 1rem;
+  padding-bottom: 1.3rem;
+}
+
+body {
+  background-color: #fafafa;
+  color: #1e1e1e;
+}
+
+header {
+  padding-top: 2em;
+  border-bottom: solid 2px #1e1e1e;
+}
+header img {
+  max-width: 30em;
+  padding-right: 1em;
+}
+
+h2 {
+  font-size: 2em;
+  font-family: quiche-sans, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-family: quiche-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h4 {
+  font-size: 1em;
+  font-family: quiche-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.2rem;
+  padding-top: 1rem;
+  text-transform: uppercase;
+  color: #962b09;
+}
+
+p {
+  font-size: 1.2em;
+  font-family: quiche-sans, sans-serif;
+
+  font-weight: 400;
+
+  font-style: normal;
+  padding: 1rem 0rem;
+}
+
+div.locations {
+  padding: 3em;
+}
+
+.price {
+  padding-bottom: 1.5rem;
+  padding-top: none;
+}
+
+.description {
+  padding-bottom: none;
+  font-style: italic;
+}
+
+div.about {
+  margin: 2em;
+}
+img.about {
+  max-width: 80%;
+  margin: auto;
+}
+
+p.home {
+  font-size: 1.5em;
+}
+ul.grid {
+  margin: 2em 2em 1em 4em;
+  list-style: none;
+}
+nav ul {
+  padding-bottom: 1em;
+  word-spacing: 2em;
+  line-height: 2rem;
+  margin-left: 4em;
+  margin-right: 4em;
+}
+img.menu {
+  max-width: 80%;
+  margin: auto;
+}
+nav ul li {
+  display: inline;
+  font-family: quiche-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  word-spacing: 2em;
+  text-transform: uppercase;
+}
+
+nav ul li a {
+  color: #1e1e1e;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+nav ul li a:hover {
+  color: #a83b1d;
+}
+
+footer ul li {
+  list-style: none;
+  font-size: 1em;
+  font-family: quiche-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 0.3rem;
+  word-spacing: 2em;
+}
+
+footer ul li a {
+  color: #1e1e1e;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+footer ul li a:hover {
+  color: #a83b1d;
+}
+
+footer {
+  color: #1e1e1e;
+  padding-bottom: 0.5em;
+  border-top: solid 2px #1e1e1e;
+  border-bottom: solid 2px #1e1e1e;
+  padding-left: 2em;
+}
+
+footer h3 {
+  padding-top: 1rem;
+}
+footer ul {
+  padding-top: 0.25rem;
+  padding-bottom: 1rem;
+  text-transform: lowercase;
+  word-spacing: 2em;
+}
+
+@media screen and (min-width: 42em) {
+  ul.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    margin: 2em;
+    padding-left: 2.2em;
+    list-style: none;
+  }
+  h4 {
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+  nav ul {
+    padding-left: 1em;
+  }
+
+  nav ul li {
+    font-size: 1.3em;
+    word-spacing: 2em;
+  }
+  div.locations {
+    padding-top: 2em;
+    padding-left: 4em;
+    padding-right: 5em;
+  }
+  footer ul li {
+    display: inline;
+  }
+  div.locations img {
+    max-width: 70%;
+    padding-bottom: 2em;
+  }
+
+  div.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 10em auto 3em;
+  }
+
+  header {
+    padding: 1em;
+  }
+
+  footer {
+    grid-row: 2/3;
+    padding-left: 4em;
+  }
+
+  div.about {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+}
+
+@media screen and (min-width: 57em) {
+  img.about {
+    padding-top: 2em;
+  }
+  p.home {
+    margin: auto;
+    font-size: 1.8em;
+  }
+  img.home {
+    grid-column: 3/6;
+    grid-row-start: 1;
+    max-width: 80%;
+    margin: auto;
+  }
+  p {
+    grid-column: 1/3;
+    grid-row: auto;
+  }
+
+  h3 {
+    grid-column: 1/4;
+    grid-row: 3/4;
+  }
+
+  h2 {
+    grid-column: 1/4;
+    grid-row: auto;
+  }
+
+  h2.location {
+    font-size: 2.3em;
+    text-transform: none;
+  }
+  img {
+    grid-column: 3/6;
+    grid-row: 1/6;
+  }
+  ul.grid {
+    display: grid;
+    grid-column-gap: 3rem;
+    padding: 0rem 3rem 1rem;
+  }
+
+  ul {
+    grid-column: 1/3;
+    list-style: none;
+    grid-row: auto;
+  }
+}
+@media screen and (min-width: 80em) {
+  div.about {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto 2em;
+    grid-column-gap: 3em;
+    padding: 0em 2em;
+  }
+
+  aside {
+    grid-column: 1/3;
+    grid-row: auto;
+  }
+
+  img.about {
+    grid-column: 3/6;
+    grid-row-start: 1;
+    max-width: 100%;
+    margin: 0;
+    padding-top: 0;
+  }
+  img.home {
+    max-width: 100%;
+    margin-right: 2em;
+  }
+  p.home {
+    padding-top: 5em;
+  }
+}
+
+/*Please don’t change this CSS stylesheet for the content hierarchy assginment */
