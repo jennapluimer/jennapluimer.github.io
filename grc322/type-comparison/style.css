@@ -1,0 +1,63 @@
+/*CSS DOCUMENT */
+h1, h2, h3, h4, p, ul, ol, li {margin: 0; padding:0; font-size: 1em; font-weight: normal;}
+
+body {
+	background-color: #fafafa;
+	color: #333333;
+	font-family: serif;
+}
+
+div.container {
+	max-width: 40em;
+	margin: auto;
+}
+
+img {
+	width: 100%;
+}
+
+figure {
+	margin: 1em 0;
+}
+
+h1, h2, h3, h4, p, ul, ol, li, figcaption {
+	margin: 0; 
+	padding:0; 
+	font-size: 1em;
+    font-family: "vista-slab", serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+h1 {
+	font-size: 2.5em; 
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 2em; 
+	font-weight: 500;
+    padding-top: 1em;
+    
+}
+
+h3 {
+	font-size: 1.5em; 
+	font-weight: 300;
+    padding-top: 0.4em;
+}
+
+figcaption{
+    padding-top: 0.4em;
+    padding-bottom: 0.6em;
+}
+.franklin{
+    color: #00AEEF;
+    
+}
+.trade{
+    color: #FBB040;
+}
+.italic{
+    font-style: italic;
+}
