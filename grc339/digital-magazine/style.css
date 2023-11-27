@@ -1,13 +1,14 @@
 /*CSS document*/
 
 body {
-	color:51, 51, 51;
+	color: rgb(51, 51, 51);
     font-family: haboro, serif;
     font-weight: 400;
 }
 
-
-
+footer{
+    border-top: 1px solid rgb(164,51,71);
+}
 
 h1{
     margin-left: auto;
@@ -17,16 +18,22 @@ h1{
     
 }
 
+h2{
+    font-family: fino-sans, sans-serif;
+    font-size: 3em;
+    font-weight: 400;
+    color: #fefefe;
+    text-align: center;
+}
 h3{
     font-family: fino-sans, sans-serif;
     font-size: 2em;
     font-weight: 400;
 }
 
-h2{
-    font-family: fino-sans, sans-serif;
-    font-size: 3em;
-    font-weight: 400;
+.link{
+
+    text-decoration: underline;
 }
 
 
@@ -43,7 +50,6 @@ figure {
 
 img {
     width: 100%;
-    padding-top: 2em;
 }
 
 nav{
@@ -71,6 +77,9 @@ nav ul li a {
   font-size: 1.3em;
 }
 
+nav ul li a:hover {
+  color: rgb(164,51,71);
+}
 figcaption{
     font-family: haboro, serif;
     font-style: italic;
@@ -80,7 +89,116 @@ a{
     text-decoration: none;
     color: #1e1e1e;
 }
-    
+
+
+main.photos {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: calc(72% + 3em);
+}
+
+figure.gallery{
+    margin: 0;
+    width: calc(100%-2em);
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+input.gallery:nth-of-type(1):checked ~ main.photos figure.gallery:nth-of-type(1),
+input.gallery:nth-of-type(2):checked ~ main.photos figure.gallery:nth-of-type(2),
+input.gallery:nth-of-type(3):checked ~ main.photos figure.gallery:nth-of-type(3),
+input.gallery:nth-of-type(4):checked ~ main.photos figure.gallery:nth-of-type(4),
+input.gallery:nth-of-type(5):checked ~ main.photos figure.gallery:nth-of-type(5),
+input.gallery:nth-of-type(6):checked ~ main.photos figure.gallery:nth-of-type(6),
+input.gallery:nth-of-type(7):checked ~ main.photos figure.gallery:nth-of-type(7),
+input.gallery:nth-of-type(8):checked ~ main.photos figure.gallery:nth-of-type(8){
+    opacity: 1;
+}
+
+nav.thumbnails {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 0.2em;
+}
+
+
+input.gallery {
+    display: none;
+}
+
+
+section.personal-info ul li {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 1em;
+}
+
+section.personal-info ul li {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 1em;
+}
+
+section.personal-info ul li input[type="name"],
+section ul li input[type="email"],
+section ul li select {
+	flex: 1 0 12em;
+	box-sizing: border-box;
+}
+
+section.personal-info ul li label {
+	flex: 0 0 10em;
+}
+	
+h3 {
+	margin: 1rem 0 0;
+	}
+
+ul {
+	padding: 0;
+	list-style-type: none;
+	}
+	
+form {
+    background: rgb(164,51,71);
+    padding: 1em;
+    margin-bottom: 1em;
+    margin: auto;
+    max-width: 40em;
+    color: #fefefe;
+}
+/*
+textarea {
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	height: 6em;
+	background: #fcfcfc;
+	border: 1px solid #e8e8e8;
+	padding: 0.4em;
+	font-family: sans-serif;
+	color: #1e1e1e;
+	}
+*/
+
+section.select ul{
+	display: flex;
+	flex-wrap: wrap;
+	}
+
+section.select ul li{
+	flex: 1 0 15em;
+	}
+input.gallery {
+    display: none;
+}
+
+section.tertiary{
+            border-bottom: 2px solid #B12644;
+        }
+
+
     @media screen and (min-width: 60em)    {
         div.container{
             max-width: 100em;
@@ -90,11 +208,11 @@ a{
         }  
         section{
             max-width: 40em;
-            margin: 0 auto;
+            margin:auto;
         }
         
       
-        header{
+        header, footer{
             grid-column: 1/3;
         }
         
@@ -132,10 +250,11 @@ a{
             object-fit: cover;
         }
         
-        section.tertiary{
-            border-bottom: 2px solid #B12644;
-        }
-}
+        
+        
+
+        
+
     
     
     
