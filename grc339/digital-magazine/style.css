@@ -12,6 +12,8 @@ header{
 
 footer{
     border-top: 2px solid rgb(164,51,71);
+    max-width: 40em;
+    margin: auto;
 }
 
 h1{
@@ -26,8 +28,12 @@ h2{
     font-family: fino-sans, sans-serif;
     font-size: 3em;
     font-weight: 400;
-    color: #fefefe;
+    color: #1e1e1e;
     text-align: center;
+}
+
+h2.newsletter{
+    color: #fefefe;
 }
 h3{
     font-family: fino-sans, sans-serif;
@@ -40,6 +46,13 @@ h3{
     text-decoration: underline;
 }
 
+
+
+article.article h3{
+        border-bottom: dotted 2px rgb(164,51,71);
+  padding-top: 2rem;
+
+}
 
 
 div.container {
@@ -82,9 +95,18 @@ nav ul li a {
   font-size: 1.3em;
 }
 
-nav ul li a:hover {
-  color: rgb(164,51,71);
+nav ul li a:hover{
+    color: rgb(164,51,71);
+} 
+
+main a:hover, aside a:hover{
+    opacity: 70%;
 }
+
+aside h3, aside p{
+    padding: 0 2rem;
+}
+
 figcaption{
     font-family: haboro, serif;
     font-style: italic;
@@ -99,7 +121,11 @@ a{
 main.photos {
     position: relative;
     overflow: hidden;
-    padding-bottom: calc(72% + 3em);
+    padding-bottom: calc(40% + 3em);
+    display: block;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 figure.gallery{
@@ -125,6 +151,8 @@ nav.thumbnails {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 0.2em;
+    border: none;
+     padding-bottom: 1rem;
 }
 
 
@@ -204,27 +232,118 @@ section.tertiary{
         }
 
 
+    div.info{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 0 1em;
+       place-items: center;
+        align-items: flex-start;
+        padding-bottom: 1rem;
+            
+        }
+       
+      ul.notes{
+        grid-column: 1/2;
+        }
+
+       ul.pair{
+        grid-column: 2/3;
+        }
+
+article{
+padding: 0 1rem 2rem;
+    margin: auto;
+
+}
+
+@media screen and (min-width: 45em){
+    
+    div.container, footer{
+        max-width: 100em;
+
+    }
+    
+    
+    footer{
+        padding-left: 1rem;
+    }
+    main.photos {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: calc(40% + 3em);
+    display: block;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure.gallery{
+    margin: 0;
+    width: calc(100%-2em);
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+input.gallery:nth-of-type(1):checked ~ main.photos figure.gallery:nth-of-type(1),
+input.gallery:nth-of-type(2):checked ~ main.photos figure.gallery:nth-of-type(2),
+input.gallery:nth-of-type(3):checked ~ main.photos figure.gallery:nth-of-type(3),
+input.gallery:nth-of-type(4):checked ~ main.photos figure.gallery:nth-of-type(4),
+input.gallery:nth-of-type(5):checked ~ main.photos figure.gallery:nth-of-type(5),
+input.gallery:nth-of-type(6):checked ~ main.photos figure.gallery:nth-of-type(6),
+input.gallery:nth-of-type(7):checked ~ main.photos figure.gallery:nth-of-type(7),
+input.gallery:nth-of-type(8):checked ~ main.photos figure.gallery:nth-of-type(8){
+    opacity: 1;
+}
+
+nav.thumbnails {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 0.2em;
+    border: none;
+     padding-bottom: 1rem;
+}
+
+
+input.gallery {
+    display: none;
+}
+
+    article{
+            padding: 0 3rem 2rem;
+        }
+    
+}
+
     @media screen and (min-width: 60em)    {
+        
+      
         div.container{
-            max-width: 100em;
             display: grid;
             grid-template-columns: 3fr 1fr;
             grid-gap: 0 1em;
         }  
-        section{
-            max-width: 40em;
-            margin:auto;
-        }
         
+    aside h3, aside p{
+    padding: 0 2rem 0 0;
+}
     
         header, footer{
             grid-column: 1/3;
+
         }
         
         main{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 0 1em;
+           
+
+        }
+        
+        
+        article{
+            max-width: 50em;
         }
         
         section.mainstory{
@@ -251,10 +370,14 @@ section.tertiary{
             flex: 0 0 auto;
         }
         section.mainstory a figure img{
-            height: 95%;
+            height: 97%;
             object-fit: cover;
         }
         
+       
+        
+    
+     
 }
         
 
@@ -273,6 +396,7 @@ section.tertiary{
     h1 img {  
     opacity: 0;  
     } 
+    
    h2, nav ul li a, a{
          color: #F8F0E3;
     }
@@ -280,6 +404,12 @@ section.tertiary{
     nav ul li a:hover{
         color: rgb(219, 38, 90);
     }
+    
+    
+    main a figure:hover, aside a:hover{
+    opacity: 85%;
+}
+    
     header, footer, section.tertiary, nav{
         border-color: rgb(219, 38, 90);
     }
@@ -291,6 +421,9 @@ section.tertiary{
         background: none;
     }
     
+    article.article h3{
+        color:  #F8F0E3;
+        border-color: rgb(219, 38, 90);
 }
 
     
